@@ -1,0 +1,83 @@
+/*Declare variables in CSS files*/
+:root {
+	--main-color: #000664;
+	--header-color: #2C3E50;
+	--nav-color: #4DD0E1;
+	--customer-detail-color: #FCF3CF;
+	--repair-detail-color: #D5F5E3;
+	--courtesy-phone-color: #2874A6;
+	--cost-section-color: #EDBB99;
+	--button-section-color: #EDBB99;
+	--footer-color: #2C3E50;
+}
+
+/*---------------------------------------------------*/
+/*Drag and Drop CSS*/
+/*---------------------------------------------------*/
+.drag-area {
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.drop-area {
+    text-align: center;
+    color: blue;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background: green;
+    color: white;
+    text-align: center;
+}
+
+.result {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.iphone-image {
+  background: url('https://images.macrumors.com/t/9r84bU_ZTOTrUixxwhjHUFsAvD4=/800x0/smart/article-new/2017/09/iphonexdesign.jpg?lossy');
+  background-size: 100% 100%;
+}
+
+.samsung-image {
+  background: url('https://images.samsung.com/is/image/samsung/levant/galaxy-s10/gallery/levant-galaxy-s10-sm-g975-sm-g975fzkdmid-lprismblack-thumb-145214816?$320_320_PNG$');
+  background-size: 100% 100%;
+}
+
+.galaxy-image {
+  background: url('https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1641944535-samsung-galaxy-s21-fe-1641944520.jpg?crop=1xw:1xh;center,top&resize=480:*');
+  background-size: 100% 100%;
+}
+
+.charger-image {
+  background: url('https://c8.alamy.com/comp/JEKRH5/black-cell-phone-charger-cord-on-a-white-surface-cell-phone-charger-JEKRH5.jpg');
+  background-size: 100% 100%;
+}
+/*---------------------------------------------------*/
+/*File Upload*/
+/*---------------------------------------------------*/
+#display-image{
+  width: 400px;
+  height: 225px;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+}
+/*---------------------------------------------------*/
+/*File Upload*/
+/*---------------------------------------------------*/
+svg path:hover {
+    fill: #65302a;
+    cursor: pointer;
+}
+
+svg path.active {
+    fill: #65302a;
+}

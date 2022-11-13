@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FAQs</title>
+	<!--Embed bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!------------------------------------HEADER------------------------------------------>
+	<header class="row" style="min-height: 15vh; background-color: var(--header-color);">
+		<!------------------------------------TITLE------------------------------------------>
+		<div class="col-12 col-md-12 col-lg-8 m-0 p-0 d-flex align-items-center justify-content-center" style="min-height: 17vh;">
+			<h1 class="text-white text-center">Phone Fix Booking FAQs</h1>
+		</div>
+		<!------------------------------------NAVBAR------------------------------------------>
+		<div class="text-white col-12 col-md-12 col-lg-4 row h-25 m-0 p-0" style="background-color: var(--nav-color)">
+			<button class="col-12 col-md-6 col-lg-6 border border-primary bg-secondary text-center" onclick="window.location.href='index.html';">HOME</button>
+			<button class="col-12 col-md-6 col-lg-6 border border-primary bg-secondary text-center" onclick="window.location.href='advanced.html';">EXTENSION</button>
+		</div>	
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="row">	
+				<div class="col-12 col-lg-6"><label>Search</label><input id="search-box" type="text" placeholder="keywords" class="m-2"></div>
+				<div class="col-12 col-lg-6" style="text-align: center;">
+					<a href="https://cors-anywhere.herokuapp.com/" style="color: blue;">Can't see anything? Activate the proxy here.</a>
+				</div>
+				<div id="questions" class="row"></div>
+			</div>
+		</div>
+	</main>
+	<!------------------------------------FOOTER------------------------------------------>
+	<footer class="text-white d-flex align-items-center justify-content-center" style="background-color: var(--footer-color); min-height: 10vh;">
+		<h5>ADVANCED WEB DEVELOPMENT @2022</h5>
+	</footer>
+	
+	<!--insert Bootstrap JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	<!--insert JQUERY-->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<!--insert our own JS-->
+	<script src="JS/javascript.js"></script>
+</body>
+</html>

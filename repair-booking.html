@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<!------------------------------HEAD------------------------------------------------>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Repair Booking</title>
+		<!--Embed bootstrap CSS-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+		<link rel="stylesheet" href="CSS/style.css" type="text/css">
+	</head>
+	<!------------------------------BODY------------------------------------------------>
+	<body  class="d-flex flex-column min-vh-100">
+		<!------------------------------------HEADER------------------------------------------>
+		<header class="bg-secondary p-2">
+            <div class="container-fluid ">
+                <div class="row">
+                    <!--Header Title-->
+                    <div class="col-6 p-3" style="text-align: left" style="background-color: #eeeee4;">
+                        <h2>Phone Fix Booking System</h2>
+                    </div>
+
+                    <div id="dueAmount" class="col-6 p-1" style="text-align: right" style="background-color: #eeeee4;">
+                        <p>
+                            Amount Due <br>
+                            <h3 id="amountTotal"></h3>
+                        </p>
+                    </div>
+                </div>
+            </div>
+		</header>
+		<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-6 p-4">
+					<h3>Customer</h3>
+					<p><strong>Name: </strong><span id="nameInfo"></span></p>
+					<p><strong>Address Line 1: </strong><span id="street"></span></p>
+					<p><strong>Address Line 2: </strong><span id="fullAddress"></span></p>
+					<p><strong>Phone: </strong><span id="phone"></span></p>
+					<p><strong>Email: </strong><span id="email"></span></p>
+				</div>
+						
+				<div class="col-6 p-4">
+					<h3>Repair Job</h3>
+					<p><strong>Job Number: </strong><span id="jobNo"></span></p>
+					<p><strong>Invoice Date: </strong><span id="invDate"></span></p>
+					<p><strong>Payment Due: </strong><span id="payDueDate"></span></p>
+				</div>
+
+				<div class="col-12 border border-gray"></div>
+					<div class="col-6 p-4">
+						<h3>Repair Details</h3>
+						<p><strong>Purchase Date: </strong><span id="purchaseDate"></span></p>
+						<p><strong>Repair Date/Time: </strong><span id="repairDate"></span></p>
+						<p><strong>Under Warranty: </strong><span id="warranty"></span></p>
+						<p><strong>IMEI Number: </strong><span id="IMEI"></span></p>
+						<p><strong>Device Make: </strong><span id="make"></span></p>
+						<p><strong>Model Number: </strong><span id="modelNumber"></span></p>
+						<p><strong>Fault Category: </strong><span id="fault"></span></p>
+						<p><strong>Description: </strong><span id="description"></span></p>
+						<br> 
+						<h3>Courtesy Loan Device Details</h3>
+						<table id="itemTable"></table>
+					</div>
+					<div class="col-6 p-4">
+						<br><br><br><br><br><br><br>
+						<h3>Totals</h3>
+						<p><strong>Bond: </strong><span id="bond"></span></p>
+						<p><strong>Service Fee: </strong><span id="serviceFee"></span></p>
+						<p><strong>Total: </strong><span id="total"></span></p>
+						<p><strong>GST: </strong><span id="GST"></span></p>
+						<p><strong>Total (+GST): </strong><span id="total_with_GST"></span></p>						
+					</div>
+					<div class="col-12 border border-gray"></div>
+					<div class="col-6 p-4">
+						<h3>We FiX Phones</h3>
+						<p>641 Carlyle st, Napier</p>
+					</div>	
+					<div class="col-6 p-4">
+						<h3>Contact Us</h3>
+						<p><strong>Phone: </strong>0214225820</p>
+						<p><strong>Email: </strong>wefixphones@gmail.com</p>
+					</div>
+				</div>
+			</div> 
+		</main>
+		<footer class="text-white d-flex align-items-center justify-content-center" style="background-color: var(--footer-color); min-height: 10vh;">
+			<h5>ADVANCED WEB DEVELOPMENT @2022</h5>
+		</footer>
+		<!------------------------------------Javascript------------------------------------------>
+		<!--insert Bootstrap JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+		<!--insert JQUERY-->
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<!--insert our own JS-->
+		<script src="JS/javascript.js" onload="populateForm()"></script>
+	</body>
+</html>
